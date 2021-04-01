@@ -1,6 +1,17 @@
 {
   "name": "@clc/api",
   "version": "1.0.0",
-  "main": "bin/index.js",
-  "license": "MIT"
+  "main": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lcu-connector": "^2.1.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./lib",
+    "test": "npm run build && npm run start"
+  }
 }
