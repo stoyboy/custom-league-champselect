@@ -1,0 +1,6 @@
+{
+  "name": "@clc/api",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "custom-league-champselect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Ferrumxd/custom-league-champselect.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
