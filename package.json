@@ -5,6 +5,9 @@
   "repository": "git@github.com:Ferrumxd/custom-league-champselect.git",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "web-dev": "yarn workspace @clc/frontend run vite"
+  },
   "workspaces": [
     "packages/*"
   ]
