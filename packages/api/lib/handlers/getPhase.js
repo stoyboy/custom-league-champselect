@@ -34,3 +34,4 @@ async function getPhase(result) {
     connector.start();
 }
 exports.default = getPhase;
+//# sourceMappingURL=getPhase.js.map
