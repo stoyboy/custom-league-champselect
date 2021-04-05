@@ -13,15 +13,13 @@ import getLatestLeagueDataJSON from './handlers/getLatestLeagueDataJSON'
 
 
 
-function getActions(callback?:any) {
-    websocket(async (result:any) => {
-        if (result[2].uri.startsWith("/lol-champ-select/v1/summoners/")) {
-            callback(await getCurrentPlayerActions(result))
-        }
+function getActions(callback?: any) {
+    websocket(async (result: any) => {
+        callback(await getCurrentPlayerActions(result))
     })
 }
 
-getActions((callback:any) => {
-    console.log(callback)
+getActions((callback: any) => {
+    if (callback != undefined) console.log("index log", callback)
 })
 

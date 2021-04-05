@@ -11,12 +11,11 @@ const getCurrentPlayerActions_1 = __importDefault(require("./handlers/getCurrent
 })*/
 function getActions(callback) {
     websocket_1.default(async (result) => {
-        if (result[2].uri.startsWith("/lol-champ-select/v1/summoners/")) {
-            callback(await getCurrentPlayerActions_1.default(result));
-        }
+        callback(await getCurrentPlayerActions_1.default(result));
     });
 }
 getActions((callback) => {
-    console.log(callback);
+    if (callback != undefined)
+        console.log("index log", callback);
 });
 //# sourceMappingURL=index.js.map
